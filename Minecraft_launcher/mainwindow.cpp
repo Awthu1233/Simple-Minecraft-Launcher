@@ -19,7 +19,7 @@ void MainWindow::on_pushButton_clicked()
 {
     if (it_has_username == true){
         //simple arguments
-        //I know there's a easier way but i dont now
+        //I know there's a easier way but i dont know
         ui->output->clear();
         jvmargs.clear();
         gameargs.clear();
@@ -102,4 +102,5 @@ void MainWindow::on_commandLinkButton_clicked()
     system("start https://github.com/Awthu1233");
     //if the button open the terminal, dont worry its normal :)
 }
+
 
