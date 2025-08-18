@@ -9,7 +9,7 @@
 #include <QUrl>
 #include <QDir>
 QString defver = "1.21.5";
-QString mcpath = ".minecraft";
+QString mcpath = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + QDir::separator() + ".minecraft";
 QString verpath = mcpath + "\\versions\\" + defver + "\\" + defver + ".jar";
 QProcess executemc = QProcess();
 QString username;
@@ -216,3 +216,4 @@ QString process_err_str = "The process could not start: ";
 QString err_when_reading_file = "Error when reading file.";
 
 #endif
+
